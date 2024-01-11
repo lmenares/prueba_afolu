@@ -11,10 +11,10 @@ st.markdown('A continuación se muestran los resultados segun los siguientes niv
 
 
 bau = pd.read_csv('bau.csv')
-foresta=pd.read_excel('https://github.com/lmenares/prueba_afolu/blob/main/tableau_p3.xlsx', sheet_name='forestacion')
-manejo=pd.read_excel('https://github.com/lmenares/prueba_afolu/blob/main/tableau_p3.xlsx', sheet_name='manejo')
-areas=pd.read_excel('https://github.com/lmenares/prueba_afolu/blob/main/tableau_p3.xlsx', sheet_name='areas')
-incendios=pd.read_excel('https://github.com/lmenares/prueba_afolu/blob/main/tableau_p3.xlsx', sheet_name='incendios')
+foresta=pd.read_csv('forestacion.csv')
+manejo=pd.read_csv('manejo.csv')
+areas=pd.read_csv('areas.csv')
+incendios=pd.read_csv('incendios.csv')
 
 
 imp_forest = st.sidebar.select_slider(
