@@ -9,11 +9,11 @@ st.markdown('''
             :violet[***Seleccione el nivel de implementación de cada medida en las barras de la izquierda***]''')
 st.markdown('A continuación se muestran los resultados segun los siguientes niveles seleccionados para cada medida:')
 
-bau = pd.read_excel('prueba_afolu/tableau_p3.xlsx', sheet_name='bau')
-foresta=pd.read_excel('C:\\Users\\lunam\\Desktop\\Streamlit_afolu\\tableau_p3.xlsx', sheet_name='forestacion')
-manejo=pd.read_excel('C:\\Users\\lunam\\Desktop\\Streamlit_afolu\\tableau_p3.xlsx', sheet_name='manejo')
-areas=pd.read_excel('C:\\Users\\lunam\\Desktop\\Streamlit_afolu\\tableau_p3.xlsx', sheet_name='areas')
-incendios=pd.read_excel('C:\\Users\\lunam\\Desktop\\Streamlit_afolu\\tableau_p3.xlsx', sheet_name='incendios')
+bau = pd.read_excel('https://github.com/lmenares/prueba_afolu/blob/main/tableau_p3.xlsx', sheet_name='bau')
+foresta=pd.read_excel('https://github.com/lmenares/prueba_afolu/blob/main/tableau_p3.xlsx', sheet_name='forestacion')
+manejo=pd.read_excel('https://github.com/lmenares/prueba_afolu/blob/main/tableau_p3.xlsx', sheet_name='manejo')
+areas=pd.read_excel('https://github.com/lmenares/prueba_afolu/blob/main/tableau_p3.xlsx', sheet_name='areas')
+incendios=pd.read_excel('https://github.com/lmenares/prueba_afolu/blob/main/tableau_p3.xlsx', sheet_name='incendios')
 
 
 imp_forest = st.sidebar.select_slider(
