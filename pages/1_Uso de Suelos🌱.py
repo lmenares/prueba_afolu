@@ -1,8 +1,6 @@
 import streamlit as st
 import pandas as pd
 import altair as alt
-import requests
-from io import BytesIO
 
 st.title("Uso de Suelos 🌱")
 
@@ -11,17 +9,8 @@ st.markdown('''
             :violet[***Seleccione el nivel de implementación de cada medida en las barras de la izquierda***]''')
 st.markdown('A continuación se muestran los resultados segun los siguientes niveles seleccionados para cada medida:')
 
-# URL cruda del archivo Excel en GitHub
-url = 'https://github.com/lmenares/prueba_afolu/raw/main/tableau_p3.xlsx'
 
-# Obtener el contenido del archivo Excel desde GitHub
-response = requests.get(url)
-content = BytesIO(response.content)
-
-# Leer el archivo Excel desde el contenido obtenido
-bau = pd.read_excel(content, sheet_name='bau')
-
-#bau = pd.read_excel('https://github.com/lmenares/prueba_afolu/blob/main/tableau_p3.xlsx', sheet_name='bau')
+bau = pd.read_excel('https://raw.githubusercontent.com/lmenares/prueba_afolu/main/tableau_p3.xlsx', sheet_name='bau')
 foresta=pd.read_excel('https://github.com/lmenares/prueba_afolu/blob/main/tableau_p3.xlsx', sheet_name='forestacion')
 manejo=pd.read_excel('https://github.com/lmenares/prueba_afolu/blob/main/tableau_p3.xlsx', sheet_name='manejo')
 areas=pd.read_excel('https://github.com/lmenares/prueba_afolu/blob/main/tableau_p3.xlsx', sheet_name='areas')
