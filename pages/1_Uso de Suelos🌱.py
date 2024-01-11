@@ -10,7 +10,7 @@ st.markdown('''
 st.markdown('A continuación se muestran los resultados segun los siguientes niveles seleccionados para cada medida:')
 
 
-bau = pd.read_excel('https://github.com/lmenares/prueba_afolu/blob/main/tableau_p3.xlsx', sheet_name='bau')
+bau = pd.read_excel('https://raw.githubusercontent.com/lmenares/prueba_afolu/blob/main/tableau_p3.xlsx', sheet_name='bau')
 foresta=pd.read_excel('https://github.com/lmenares/prueba_afolu/blob/main/tableau_p3.xlsx', sheet_name='forestacion')
 manejo=pd.read_excel('https://github.com/lmenares/prueba_afolu/blob/main/tableau_p3.xlsx', sheet_name='manejo')
 areas=pd.read_excel('https://github.com/lmenares/prueba_afolu/blob/main/tableau_p3.xlsx', sheet_name='areas')
