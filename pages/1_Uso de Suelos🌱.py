@@ -1,7 +1,6 @@
 import streamlit as st
 import pandas as pd
 import altair as alt
-from streamlit_dynamic_filters import DynamicFilters
 
 st.title("Uso de Suelos 🌱")
 
