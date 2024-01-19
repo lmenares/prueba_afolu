@@ -30,12 +30,12 @@ st.write('Planes de Manejo:', imp_manejo*100,'%', 'de implementacion de la medid
 imp_areas = st.sidebar.select_slider(
     'Nivel de implementación de Áreas protegidas',
     options=[0,0.1,0.5,1])
-st.write('Áreas protegidas:', imp_manejo*100,'%', 'de implementacion de la medida')
+st.write('Áreas protegidas:', imp_areas*100,'%', 'de implementacion de la medida')
 
 imp_incendios = st.sidebar.select_slider(
     'Nivel de implementación de Reducción de incendios',
     options=[0,0.1,0.5,1])
-st.write('Reducción de incendios:', imp_manejo*100,'%', 'de implementacion de la medida')
+st.write('Reducción de incendios:', imp_incendios*100,'%', 'de implementacion de la medida')
 
 mit_forest=foresta[foresta['i_forestacion']==imp_forest]
 mit_manejo=manejo[manejo['i_manejo']==imp_manejo]
