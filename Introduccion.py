@@ -12,8 +12,7 @@ st.sidebar.success("Seleccione un sector")
 
 st.markdown(
     """
-    En este proyecto se analizaron las trayectorias de emisiones de los sectores
- bla bla...
+    En este proyecto se analizaron las trayectorias de emisiones de los sectores ...
 ###### Se consideraron las siguientes medidas de mitigación para Uso de Suelos:
 
 """
