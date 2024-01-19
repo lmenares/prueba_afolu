@@ -4,7 +4,7 @@ import altair as alt
 
 st.title("Uso de Suelos 🌱")
 
-st.markdown('El sector uso de suelos bla bla... ')
+st.markdown('El sector uso de suelos ... ')
 st.markdown('''
             :violet[***Seleccione el nivel de implementación de cada medida en las barras de la izquierda***]''')
 st.markdown('A continuación se muestran los resultados segun los siguientes niveles seleccionados para cada medida:')
